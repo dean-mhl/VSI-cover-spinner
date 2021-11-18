@@ -24,4 +24,4 @@ Built using the _Web Animations API_.
 2. Prepend each line with `https://global.oup.com/academic/covers/pop-up/` (e.g., https://global.oup.com/academic/covers/pop-up/9780199687350).
 3. In an empty folder on a system capable of running wget, run `wget -i [your-text-file.txt] --content-disposition`.
 4. Consider running a tool like imagemagick or [RIOT](https://riot-optimizer.com/) to reduce the file size of each image to 70 Kb or less.
-
+5. Copy the images to the project's /src/assets/symbols folder.
