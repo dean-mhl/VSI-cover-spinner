@@ -7,20 +7,21 @@ export default class Slot {
     Symbol.preload();
 
     this.currentSymbols = [
-      ["death_star", "death_star", "death_star"],
-      ["death_star", "death_star", "death_star"],
-      ["death_star", "death_star", "death_star"],
-      ["death_star", "death_star", "death_star"],
-      ["death_star", "death_star", "death_star"],
+      [Symbol.random(), Symbol.random(), Symbol.random()],
+      [Symbol.random(), Symbol.random(), Symbol.random()],
+      [Symbol.random(), Symbol.random(), Symbol.random()],
+      [Symbol.random(), Symbol.random(), Symbol.random()],
+      [Symbol.random(), Symbol.random(), '9780199532155'],
     ];
 
     this.nextSymbols = [
-      ["death_star", "death_star", "death_star"],
-      ["death_star", "death_star", "death_star"],
-      ["death_star", "death_star", "death_star"],
-      ["death_star", "death_star", "death_star"],
-      ["death_star", "death_star", "death_star"],
+      ['9780199532155', '9780199532155', '9780199532155'],
+      ['9780199532155', '9780199532155', '9780199532155'],
+      ['9780199532155', '9780199532155', '9780199532155'],
+      ['9780199532155', '9780199532155', '9780199532155'],
+      ['9780199532155', '9780199532155', '9780199532155'],
     ];
+
 
     this.container = domElement;
 
