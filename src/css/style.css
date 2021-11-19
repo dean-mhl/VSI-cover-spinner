@@ -30,6 +30,36 @@ body {
   }
 }
 
+#header {
+  min-width: 500px;
+}
+
+h1, p {
+  color: #fff;
+  -webkit-font-smoothing: auto;
+}
+
+p {
+  font-size: 18px;
+  font-size: 22px;
+}
+
+h1 {
+  font-family: 'LithosPro-Regular', 'Marcellus SC', serif;
+  letter-spacing: 1px;
+}
+
+a,
+a:link,
+a:hover {
+  color: yellow;
+}
+
+a:hover {
+  text-decoration: underline !important;
+}
+
+
 #reels {
   display: flex;
   width: 100vw;
