@@ -1,32 +1,26 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>HTML 5 Slot Machine</title>
-    <link
-      rel="stylesheet"
-      href="https://unpkg.com/bootstrap@4.6.0/dist/css/bootstrap-reboot.min.css"
-    />
-    <link
-      href="https://fonts.googleapis.com/css?family=Roboto+Condensed"
-      rel="stylesheet"
-    />
+    <title>MHL: Learn Something New</title>
+    <link rel="stylesheet" href="https://unpkg.com/bootstrap@4.6.0/dist/css/bootstrap-reboot.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Marcellus+SC|Roboto+Condensed" rel="stylesheet">
   </head>
   <body>
+    <div style="position:fixed; z-index:0; top:0; left:0; width:100%; height:100%;">
+      <canvas id="canvas" style="width:100%; height:100%;"></canvas>
+    </div>	
+    <div style="position:fixed; z-index:1; top:15px; left:0; width:100%; height:100%; overflow:auto;">
     <div id="slot">
-      <div id="jackpot">Jackpot: <span id="jp">5.555.555</span></div>
+      <div id="header">
+        <h1><a title="click to see all the all these books in the catalog" href="https://mvlc.ent.sirsi.net/client/en_US/andover/search/results?qu=very+short+introduction&te=ILS&rt=false%7C%7C%7CSERIES%7C%7C%7CSeries&st=PD">Very Short Introduction series</a></h1>
+     	<p>Concise overviews written by experts for a general audience. Click a cover to find out more about it.&nbsp;&nbsp; <button type="button" class="button1" id="spin">See other covers</button></p>
+      </div>
       <div id="reels">
         <div class="reel"></div>
         <div class="reel"></div>
         <div class="reel"></div>
         <div class="reel"></div>
-        <div class="reel"></div>
-      </div>
-      <div id="controls">
-        <button type="button" id="spin">SPIN</button>
-        <label>
-          <input type="checkbox" name="autoplay" id="autoplay" />
-          Autoplay
-        </label>
+        <div class="reel"></div>  
       </div>
     </div>
     <script
