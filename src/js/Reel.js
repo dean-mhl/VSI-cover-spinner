@@ -29,9 +29,15 @@ export default class Reel {
     );
     this.animation.cancel();
 
-    initialSymbols.forEach((symbol) =>
-      this.symbolContainer.appendChild(new Symbol(symbol).img)
-    );
+    initialSymbols.forEach((symbol) => {
+	 var myimg = new Symbol(symbol).img;
+     var linkElement = document.createElement('a');
+	 linkElement.href = "https://mvlc.ent.sirsi.net/client/en_US/andover/search/results?te=ILS&qu=ISBN=" + symbol;
+     linkElement.title = "learn more about this title";
+     linkElement.appendChild(myimg);
+     this.symbolContainer.appendChild(linkElement);
+    });
+
   }
 
   get factor() {
