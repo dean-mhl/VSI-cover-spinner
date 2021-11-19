@@ -1,5 +1,6 @@
 import Reel from "./Reel.js";
 import Symbol from "./Symbol.js";
+import WarpSpeed from "./warpspeed.js";
 
 export default class Slot {
   constructor(domElement, config = {}) {
@@ -40,6 +41,10 @@ export default class Slot {
 
   spin() {
     this.onSpinStart();
+
+    const x = new WarpSpeed("canvas",'{"speed":27,"targetSpeed":2,"speedAdjFactor":0.01,"density":0.7,"shape":"square","warpEffect":true,"warpEffectLength":5,"depthFade":false,"starSize":3,"backgroundColor":"#000000","starColor":"#FFFFFF"}'
+);
+
 
     this.currentSymbols = this.nextSymbols;
     this.nextSymbols = [
