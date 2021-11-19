@@ -67,6 +67,19 @@ export default class Slot {
   onSpinEnd() {
     this.spinButton.disabled = false;
 
+  var imgs = document.querySelectorAll("div.icons img");
+  imgs.forEach(function(el) {
+    var url = el.src;
+    console.log(url);
+    var file = url.match(/([^\/]+)(?=\.\w+$)/)[0];
+    var wrapper = document.createElement('a');
+    wrapper.title = "learn more about this title";
+    wrapper.href = "https://mvlc.ent.sirsi.net/client/en_US/andover/search/results?te=ILS&qu=ISBN=" + file;
+    el.parentNode.insertBefore(wrapper, el);
+    wrapper.appendChild(el);
+  });
+
+
     console.log("SPIN END");
 
     if (this.autoPlayCheckbox.checked) {
