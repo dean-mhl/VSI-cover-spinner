@@ -9,8 +9,8 @@ export default class Symbol {
     } else {
       this.img = new Image();
       // this.img.src = require(`../assets/symbols/${name}.svg`);
-      this.img.src = require(`../assets/symbols/${name}.jpg`).default;
-
+      // this.img.src = require(`../assets/symbols/${name}.jpg`).default;
+      this.img.src = require(`../assets/symbols/${name}.jpg`);
       cache[name] = this.img;
     }
   }
