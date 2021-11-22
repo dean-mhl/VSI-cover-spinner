@@ -1,10 +1,11 @@
 {
-  "name": "html5-slot-machine",
-  "description": "Modern casino slot machine game using only plain JavaScript (Web Animations API)",
+  "name": "vsi-cover-spinner",
+  "description": "Fork of johakr/html5-slot-machine for animating the display of random cover art of books from the Very Short Introduction series",
   "version": "0.1.0",
   "license": "MIT",
   "author": "Johannes Kronmüller <hello@johakr.me> (https://johakr.me/)",
-  "repository": "johakr/html5-slot-machine",
+  "contributor": "Dean Baumeister <dbaumeister@mhl.org> (https://mhl.org)",
+  "repository": "dean-mhl/VSI-cover-spinner",
   "scripts": {
     "build": "webpack --mode production",
     "start": "webpack serve --mode development",
