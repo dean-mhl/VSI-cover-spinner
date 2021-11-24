@@ -9,6 +9,7 @@ module.exports = {
   output: {
     filename: "bundle.[contenthash].js",
     path: path.resolve(__dirname, "dist"),
+    assetModuleFilename: '[name].[ext]'
   },
   performance: {
     hints: false,
