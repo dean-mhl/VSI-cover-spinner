@@ -28,11 +28,11 @@ Built using the _Web Animations API_.
 6. Make a javascript array out of the ISBNs listed in the copy of the text document created in step 1. A tool like [arrayThis](https://arraythis.com/) makes this easy.
 7. Update /src/js/Symbol.js so that `static get symbols()` returns this array. For example, if the array is `[9780190064679, 9780190200589, 9780190213220, 9780190219765]`, the Symbol.js file should be updated like so:
 ```
-static get symbols() {
-  return ["9780190064679", "9780190200589", "9780190213220", "9780190219765"];
-}
+  static get symbols() {
+    return ["9780190064679", "9780190200589", "9780190213220", "9780190219765"];
+  }
 ````
-8. Update /src/js/Slots.js so that its constructor() function uses one of the ISBNs as the last element of its this.currentSymbols array and as every element of the this.nextSymbols array. For example, if using ISBN 9780190064679, the constructor function would start as follows:
+8. Update /src/js/Slots.js so that its constructor() function uses one of the ISBNs as the last element of its this.currentSymbols array and as every element of the        this.nextSymbols array. For example, if using ISBN 9780190064679, the constructor function would start as follows:
 ````
   constructor(domElement, config = {}) {
     Symbol.preload();
