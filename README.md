@@ -6,6 +6,9 @@ No Flash or Frameworks required. Allowing for an amazing low bundle size and bla
 
 Built using the _Web Animations API_.
 
+## Demo
+https://dean-mhl.github.io/VSI-cover-spinner/
+
 ## Features
 
 - Fully responsive for great UX on mobile, web & fullscreen mode.
