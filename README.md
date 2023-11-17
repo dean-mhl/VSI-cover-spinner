@@ -38,7 +38,7 @@ https://dean-mhl.github.io/VSI-cover-spinner/
   }
 ```
 
-8. Update /src/js/Slots.js so that its constructor() function uses one of the ISBNs as the last element of its this.currentSymbols array and as every element of the this.nextSymbols array. For example, if using ISBN 9780190064679, the constructor function would start as follows:
+8. Update /src/js/Slot.js so that its constructor() function uses one of the ISBNs as the last element of its this.currentSymbols array and as every element of the this.nextSymbols array. For example, if using ISBN 9780190064679, the constructor function would start as follows:
 
 ```
   constructor(domElement, config = {}) {
